@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  functions:
+    build: ./Functions
+    container_name: test_c
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./Functions:/test
+      - ./test/node_moddules
